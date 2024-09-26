@@ -1,0 +1,24 @@
+<style>
+  .control-section{
+      margin-top: 100px;
+  }
+</style>
+
+<div class="control-section">
+  <label for="textInput"><b>Source</b> : </label>
+  <input type="text" id="input" name="textInput" /><br />
+  <br />
+  <label for="textOutput"><b>Destination</b> : </label>
+  <input type="text" id="output" name="textOutput" /><br /><br />
+  <button id="route">Add Route</button>
+  <div>
+    <ejs-maps
+      id="container"
+      #maps
+      style="display:block;"
+      [zoomSettings]="zoomSettings"
+      [layers]="layers"
+    >
+    </ejs-maps>
+  </div>
+</div>
