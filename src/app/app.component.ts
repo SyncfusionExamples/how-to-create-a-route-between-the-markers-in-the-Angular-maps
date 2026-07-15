@@ -1,5 +1,4 @@
 import { Component, ViewChild } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import {
   Maps,
   Marker,
@@ -14,7 +13,7 @@ Maps.Inject(Marker, Zoom, NavigationLine);
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MapsModule],
+  imports: [MapsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
